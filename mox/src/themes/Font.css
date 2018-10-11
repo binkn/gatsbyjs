@@ -1,0 +1,13 @@
+/* Defined font face */
+@font-face {
+  font-family: 'OpenSansRegular';
+  src: url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

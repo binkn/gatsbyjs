@@ -1,0 +1,135 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button test Snapshot Button component 1`] = `
+.c0 {
+  height: 1.875rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid transparent;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  margin: 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.c0:hover {
+  opacity: 0.4;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+  style={Object {}}
+>
+  About us
+</button>
+`;
+
+exports[`Button test Snapshot Button component type primary 1`] = `
+.c0 {
+  height: 1.875rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid transparent;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  margin: 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #3BD0D5;
+  color: #fff;
+  border-color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.4;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+  style={Object {}}
+>
+  About us
+</button>
+`;
+
+exports[`Button test Snapshot Button component type secondary 1`] = `
+.c0 {
+  height: 1.875rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid transparent;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  margin: 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+.c0:hover {
+  opacity: 0.4;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+  style={Object {}}
+>
+  About us
+</button>
+`;
+
+exports[`Button test Snapshot Button component type third 1`] = `
+.c0 {
+  height: 1.875rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid transparent;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  margin: 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.c0:hover {
+  opacity: 0.4;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+  style={Object {}}
+>
+  About us
+</button>
+`;
+
+exports[`Button test Snapshot Button component with type default 1`] = `
+.c0 {
+  height: 1.875rem;
+  border-radius: 0.4375rem;
+  border: 0.0625rem solid transparent;
+  font-size: 0.875rem;
+  padding: 0.375rem 0.75rem;
+  margin: 0.9375rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  background-color: #5BF2FF;
+}
+
+.c0:hover {
+  opacity: 0.4;
+}
+
+<button
+  className="c0"
+  onClick={[MockFunction]}
+  style={Object {}}
+>
+  About us
+</button>
+`;
