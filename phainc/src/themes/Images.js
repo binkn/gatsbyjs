@@ -1,0 +1,23 @@
+export default {
+  bgHome: require('../assets/images/bg-home.jpg'),
+  bgAbout: require('../assets/images/bg-about.jpg'),
+  logoLight: require('../assets/images/logo-light.png'),
+  logoBlack: require('../assets/images/logo-black.png'),
+  meeting: require('../assets/images/meeting.png'),
+  flow: require('../assets/images/flow.png'),
+  adam: require('../assets/images/author/adam.jpg'),
+  eva: require('../assets/images/author/eva.jpg'),
+  tom: require('../assets/images/author/tom.jpg'),
+  office: require('../assets/images/office-bg.jpg'),
+  board: require('../assets/images/blog/board.png'),
+  group: require('../assets/images/blog/group.png'),
+  lead: require('../assets/images/blog/lead.png'),
+  market: require('../assets/images/portfolio/market.jpg'),
+  growth: require('../assets/images/portfolio/growth.jpg'),
+  corporate: require('../assets/images/portfolio/corporate.jpg'),
+  approval: require('../assets/images/portfolio/approval.jpg'),
+  accounting: require('../assets/images/portfolio/accounting.jpg'),
+  taxation: require('../assets/images/portfolio/taxation.jpg'),
+  outsource: require('../assets/images/portfolio/outsource.jpg'),
+  risk: require('../assets/images/portfolio/risk.jpg')
+}
