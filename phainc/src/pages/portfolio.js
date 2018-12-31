@@ -1,4 +1,5 @@
 import React from 'react'
+import styled from 'styled-components'
 
 // theme modules
 import Images from '../themes/Images'
@@ -7,8 +8,15 @@ import Images from '../themes/Images'
 import Banner from '../components/banner/Banner'
 import Post from '../components/post/Post'
 
+// data
+import PostData from '../constants/post'
+
+const CustomDiv = styled.div`
+  margin-bottom: 133px;
+`
+
 const Portfolio = () => (
-  <div>
+  <React.Fragment>
     <Banner
       type='other'
       src={Images.bgAbout}
@@ -18,10 +26,21 @@ const Portfolio = () => (
       heightBg='300px'
     />
 
-    <Post
-      type='left'
-    />
-  </div>
+    <CustomDiv>
+      {
+        PostData.map(item => (
+          <Post
+            key={item.id}
+            type={item.type}
+            src={item.src}
+            alt={item.alt}
+            titleText={item.titleText}
+            descriptionText={item.descriptionText}
+          />
+        ))
+      }
+    </CustomDiv>
+  </React.Fragment>
 )
 
 export default Portfolio
