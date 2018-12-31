@@ -22,7 +22,8 @@ const Card = React.memo(props => {
     src,
     alt,
     titleText,
-    descriptionText
+    descriptionText,
+    isButton
   } = props
 
   const {
@@ -61,21 +62,23 @@ const Card = React.memo(props => {
         }}
       />
 
-      <Button
-        src={Icons.moveIcon}
-        alt='move icon'
-        text='More'
-        customStyle={{
-          buttonStyle: {
-            border: 'none',
-            marginTop: '40px'
-          },
-          imgStyle: {
-            width: 'inherit',
-            paddingLeft: '30px'
-          }
-        }}
-      />
+      {isButton &&
+        <Button
+          src={Icons.moveIcon}
+          alt='move icon'
+          text='More'
+          customStyle={{
+            buttonStyle: {
+              border: 'none',
+              marginTop: '40px'
+            },
+            imgStyle: {
+              width: 'inherit',
+              paddingLeft: '30px'
+            }
+          }}
+        />
+      }
     </article>
   )
 })
@@ -96,11 +99,11 @@ export default styled(Card)`
     &:hover {
       transform: translateY(-10px);
     }
-    `};
 
     &:nth-child(2) {
     margin-top: -50px;
-  }
+    }
+  `}
 `
 
 // Defined Props Types
@@ -111,7 +114,8 @@ Card.propTypes = {
   alt: PropTypes.string,
   titleText: PropTypes.string,
   descriptionText: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.string,
+  isButton: PropTypes.bool
 }
 
 // Defined default Props
@@ -122,5 +126,6 @@ Card.defaultProps = {
   alt: '',
   titleText: '',
   descriptionText: '',
-  type: ''
+  type: '',
+  isButton: true
 }

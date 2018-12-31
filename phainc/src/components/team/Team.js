@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 // components
 import Author from '../common/Author'
@@ -18,7 +19,7 @@ const CustomDiv = styled.div`
 /**
  * Defined component
  */
-const Team = React.memo(() => {
+const Team = React.memo(props => {
   const { teams, infoTeam } = DataTeam
 
   return (
@@ -45,6 +46,7 @@ const Team = React.memo(() => {
         {teams.map(item => (
           <Author
             key={item.id}
+            isHome={props.isHome}
             src={item.src}
             alt={item.alt}
             titleText={item.titleText}
@@ -56,5 +58,14 @@ const Team = React.memo(() => {
   )
 })
 
-// Defined styled component
 export default Team
+
+// Defined Props Types
+Team.propTypes = {
+  isHome: PropTypes.bool
+}
+
+// Defined default Props
+Team.defaultProps = {
+  isHome: true
+}

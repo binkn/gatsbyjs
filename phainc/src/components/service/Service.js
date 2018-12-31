@@ -1,13 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 // components
 import Card from '../common/Card'
 import Container from '../common/Container'
 import Heading from '../common/Heading'
-
-// data
-import DataService from '../../constants/service'
 
 const CustomDiv = styled.div`
   text-align: center;
@@ -18,8 +16,14 @@ const CustomDiv = styled.div`
 /**
  * Defined component
  */
-const Service = React.memo(() => {
-  const { services, infoService } = DataService
+const Service = React.memo(props => {
+  const {
+    services,
+    infoService,
+    customStyleHeading,
+    typeCard,
+    isButton
+  } = props
 
   return (
     <Container>
@@ -28,21 +32,14 @@ const Service = React.memo(() => {
         descriptionText={infoService.descriptionText}
         isExtend
         extendText={infoService.extendText}
-        customStyle={{
-          headingStyle: {
-            marginTop: '60px',
-            marginBottom: '120px'
-          },
-          titleStyle: {
-            textAlign: 'center'
-          }
-        }}
+        customStyle={customStyleHeading}
       />
       <CustomDiv>
         {services.map(item => (
           <Card
+            isButton={isButton}
             key={item.id}
-            type='transform'
+            type={typeCard}
             src={item.src}
             alt={item.alt}
             titleText={item.titleText}
@@ -54,5 +51,22 @@ const Service = React.memo(() => {
   )
 })
 
-// Defined styled component
 export default Service
+
+// Defined Props Types
+Service.propTypes = {
+  customStyleHeading: PropTypes.object,
+  services: PropTypes.string,
+  infoService: PropTypes.string,
+  typeCard: PropTypes.string,
+  isButton: PropTypes.bool
+}
+
+// Defined default Props
+Service.defaultProps = {
+  customStyle: {},
+  services: '',
+  infoService: '',
+  typeCard: '',
+  isButton: true
+}

@@ -22,8 +22,8 @@ const List = React.memo(props => {
   const { wrapperStyle, liStyle, imgStyle } = customStyle
 
   const Wrapper = (isOrdered ? styled.ol`` : styled.ul``).extend`
-  list-style: ${isOrdered ? 'decimal': 'none' };
-  padding: 0;
+    list-style: ${isOrdered ? 'decimal' : 'none' };
+    padding: 0;
 `
 
   return (

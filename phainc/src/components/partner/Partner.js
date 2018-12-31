@@ -23,7 +23,9 @@ const Partner = React.memo(() => {
     <Container
       customStyle={{
         marginTop: '50px',
-        marginBottom: '50px'
+        marginBottom: '50px',
+        display: 'flex',
+        justifyContent: 'space-around'
       }}
     >
       {partner.map(item => (

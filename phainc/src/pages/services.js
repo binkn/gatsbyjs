@@ -5,6 +5,7 @@ import Images from '../themes/Images'
 
 // components
 import Banner from '../components/banner/Banner'
+import Business from '../components/business/Business'
 
 const Services = () => (
   <div>
@@ -16,6 +17,9 @@ const Services = () => (
       padding='65px 0'
       heightBg='300px'
     />
+
+    <Business />
+
   </div>
 )
 

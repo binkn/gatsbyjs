@@ -11,25 +11,6 @@ import Title from './Title'
 import { Colors } from '../../themes/Colors'
 import { SIZE, WEIGHT } from '../../themes/Typography'
 
-const CustomDiv = styled.div`
-  background: ${Colors.white};
-  position: relative;
-  top: -30px;
-  margin: 0 20px;
-  text-align: center;
-  box-shadow: 0 10px 40px ${Colors.fourth};
-  padding: 20px 0;
-  border-radius: 4px;
-
-  &:hover {
-    background-image: linear-gradient(to right, ${Colors.violetRed}, ${Colors.salmon});
-
-    h2, p {
-      color: ${Colors.white};
-    }
-  }
-`
-
 /**
  * Defined component
  */
@@ -40,7 +21,8 @@ const Author = React.memo(props => {
     descriptionText,
     src,
     alt,
-    customStyle
+    customStyle,
+    isHome
   } = props
 
   const {
@@ -50,6 +32,33 @@ const Author = React.memo(props => {
     descriptionStyle,
     wrapperStyle
   } = customStyle
+
+  const CustomDiv = isHome ?
+    styled.div`
+      background: ${Colors.white};
+      position: relative;
+      top: -30px;
+      margin: 0 20px;
+      text-align: center;
+      box-shadow: 0 10px 40px ${Colors.fourth};
+      padding: 20px 0;
+      border-radius: 4px;
+
+      &:hover {
+        background-image: linear-gradient(to right, ${Colors.violetRed}, ${Colors.salmon});
+
+        h2, p {
+          color: ${Colors.white};
+        }
+      }
+    ` :
+    styled.div`
+      &:hover {
+        h2 {
+          color: ${Colors.carnation};
+        }
+      }
+    `
 
   return (
     <div
@@ -102,7 +111,8 @@ Author.propTypes = {
   alt: PropTypes.string,
   customStyle: PropTypes.object,
   titleText: PropTypes.string,
-  descriptionText: PropTypes.string
+  descriptionText: PropTypes.string,
+  isHome: PropTypes.bool
 }
 
 // Defined default Props
@@ -112,5 +122,6 @@ Author.defaultProps = {
   alt: '',
   customStyle: {},
   titleText: '',
-  descriptionText: ''
+  descriptionText: '',
+  isHome: true
 }

@@ -15,7 +15,12 @@ import Digital from '../components/digital/Digital'
 import Partner from '../components/partner/Partner'
 import Marketing from '../components/marketing/Marketing'
 
+// data
+import DataService from '../constants/service'
+
 const IndexPage = React.memo(() => {
+  const { services, infoService } = DataService
+  
   return (
     <div>
       <Banner
@@ -28,7 +33,20 @@ const IndexPage = React.memo(() => {
 
       <Career />
 
-      <Service />
+      <Service
+        services={services}
+        infoService={infoService}
+        typeCard='transform'
+        customStyleHeading={{
+          headingStyle: {
+            marginTop: '60px',
+            marginBottom: '120px'
+          },
+          titleStyle: {
+            textAlign: 'center'
+          }
+        }}
+      />
 
       <Financial />
 
