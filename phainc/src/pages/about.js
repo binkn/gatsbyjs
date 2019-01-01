@@ -9,6 +9,7 @@ import Service from '../components/service/Service'
 import Career from '../components/career/Career'
 import Team from '../components/team/Team'
 import Partner from '../components/partner/Partner'
+import Optimist from '../components/optimist/Optimist'
 
 // data
 import DataService from '../constants/service'
@@ -47,6 +48,8 @@ const About = () => {
       <Team
         isHome={false}
       />
+
+      <Optimist />
 
       <Partner />
 

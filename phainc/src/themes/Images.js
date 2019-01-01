@@ -19,5 +19,7 @@ export default {
   accounting: require('../assets/images/portfolio/accounting.jpg'),
   taxation: require('../assets/images/portfolio/taxation.jpg'),
   outsource: require('../assets/images/portfolio/outsource.jpg'),
-  risk: require('../assets/images/portfolio/risk.jpg')
+  risk: require('../assets/images/portfolio/risk.jpg'),
+  bgAboutBlur: require('../assets/images/bg-about-blur.jpg'),
+  officeAbout: require('../assets/images/office-about.jpg')
 }

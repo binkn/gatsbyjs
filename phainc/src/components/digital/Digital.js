@@ -64,7 +64,6 @@ const Digital = React.memo(props => {
 
 export default styled(Digital)`
   background: url(${Images.office});
-  width: 1255px;
   height: 541px;
   position: relative;
   box-sizing: border-box;
