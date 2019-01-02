@@ -5,9 +5,6 @@ import styled from 'styled-components'
 import Image from '../common/Image'
 import Container from '../common/Container'
 
-// theme
-import { Colors } from '../../themes/Colors'
-
 // data
 import PartnerData from '../../constants/partner'
 
@@ -28,8 +25,7 @@ const Partner = React.memo(() => {
         marginTop: '50px',
         marginBottom: '50px',
         display: 'flex',
-        justifyContent: 'space-around',
-        borderTop: `1px solid ${Colors.primary}`
+        justifyContent: 'space-around'
       }}
     >
       {partner.map(item => (
