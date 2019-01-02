@@ -3,16 +3,24 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 // components
-import Container from './Container'
-import Image from './Image'
+import Container from '../common/Container'
+import Image from '../common/Image'
+import Heading from '../common/Heading'
+import Description from '../common/Description'
 
 // themes
 import Icons from '../../themes/Icons'
-import Heading from './Heading'
+import { Colors } from '../../themes/Colors'
 
 const CustomDiv = styled.div`
   display: flex;
   justify-content: space-between;
+`
+
+const WrapperDescription = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
 `
 
 const Arrow = props => {
@@ -42,13 +50,21 @@ const CarouselSlide = props => {
     display: none;
   `
 
-  const renderLiActive  = () => (
-    <CustomLiActive>
+  const renderDetail = () => (
+    <React.Fragment>
       <Image
         src={props.slide.srcIcon}
         alt={props.slide.altIcon}
       />
-      <p>{props.slide.content}</p>
+      <Description
+        text={props.slide.content}
+        fontSize='26px'
+        color={Colors.dustyGray}
+        customStyle={{
+          lineHeight: '36px',
+          fontStyle: 'italic'
+        }}
+      />
       <Image
         src={props.slide.srcAuthor}
         alt={props.slide.altAuthor}
@@ -59,24 +75,33 @@ const CarouselSlide = props => {
           marginTop: '30px'
         }}
       />
-      <p>{props.slide.author}</p>
-      <p>{props.slide.source}</p>
+
+      <WrapperDescription>
+        <Description
+          text={props.slide.author}
+          fontSize='22px'
+          color={Colors.mineShaft}
+        />
+        <Description
+          text={props.slide.source}
+          fontSize='22px'
+          customStyle={{
+            marginLeft: '20px'
+          }}
+        />
+      </WrapperDescription>
+    </React.Fragment>
+  )
+
+  const renderLiActive  = () => (
+    <CustomLiActive>
+      {renderDetail()}
     </CustomLiActive>
   )
 
   const renderLi  = () => (
     <CustomLi>
-      <Image
-        src={props.slide.srcIcon}
-        alt={props.slide.altIcon}
-      />
-      <p>{props.slide.content}</p>
-      <Image
-        src={props.slide.srcAuthor}
-        alt={props.slide.altAuthor}
-      />
-      <p>{props.slide.author}</p>
-      <p>{props.slide.source}</p>
+      {renderDetail()}
     </CustomLi>
   )
 

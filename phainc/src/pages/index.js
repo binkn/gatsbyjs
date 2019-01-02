@@ -14,7 +14,7 @@ import Team from '../components/team/Team'
 import Digital from '../components/digital/Digital'
 import Partner from '../components/partner/Partner'
 import Marketing from '../components/marketing/Marketing'
-import Slide from '../components/common/Slide'
+import Slide from '../components/slide/Slide'
 
 // data
 import DataService from '../constants/service'

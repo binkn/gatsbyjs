@@ -7,27 +7,27 @@ const SlideData = [
     altIcon: 'quote',
     srcAuthor: `${Images.eva}`,
     altAuthor: 'eva',
-    content: "Tomorrow, you will be released. If you are bored of brawling with thieves and want to achieve something there is a rare blue flower that grows on the eastern slopes. Pick one of these flowers. If you can carry it to the top of the mountain, you may find what you were looking for in the first place.",
-    author: "Bane",
-    source: "facebook"
+    content: 'Cut down on all your work by collaborating with our Launch Pad team to get the framework of your online business up and running in no time.',
+    author: 'Maria Flynn',
+    source: 'CEO of Bata'
   },
   {
     srcIcon: `${Icons.quoteIcon}`,
     altIcon: 'quote',
     srcAuthor: `${Images.adam}`,
     altAuthor: 'adam',
-    content: "You have learn to bury your guilt with anger. I will teach you to confront it and to face the truth.",
-    author: "Ra's Al Ghul",
-    source: "Snapchat"
+    content: 'Cut down on all your work by collaborating with our Launch Pad team to get the framework of your online business up sasa dsds dsds fff asas.',
+    author: 'Victoria Porter',
+    source: 'CEO of Bata'
   },
   {
     srcIcon: `${Icons.quoteIcon}`,
     altIcon: 'quote',
     srcAuthor: `${Images.tom}`,
     altAuthor: 'tom',
-    content: "Introduce a little anarchy, upset the established order and everything becomes chaos. I'm an agent of chaos. Oh, and you know the thing about chaos? It's fair.",
-    author: "Joker",
-    source: "facebook"
+    content: 'Cut down on all your work by collaborating with our Launch Pad team to get the framework of your online business up and vn vds dsd cdsd fdfd ee.',
+    author: 'Chelsea Deitch',
+    source: 'CEO of Bata'
   }
 ]
 
