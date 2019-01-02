@@ -11,8 +11,6 @@ import Description from '../common/Description'
 // theme module
 import { Colors } from '../../themes/Colors'
 import { TYPE , WEIGHT } from '../../themes/Typography'
-// import Icons from '../../themes/Icons'
-
 
 // data
 const Optimist = React.memo(props => {
@@ -41,8 +39,7 @@ const Optimist = React.memo(props => {
           fontWeight={WEIGHT.base}
           customStyle={{
             textAlign: 'left',
-            margin: '30px 0 30px 80px',
-            width: '65%'
+            margin: '30px 0 30px 80px'
           }}
         />
         <Button

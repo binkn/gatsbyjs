@@ -1,3 +1,4 @@
+// theme modules
 import Icons from "../themes/Icons"
 import Images from "../themes/Images"
 
@@ -8,22 +9,22 @@ const SocialData = {
   icons: [
     {
       id: 1,
-      src: `${Icons.facebookIcon16}`,
+      src: `${Icons.facebookIconSmall}`,
       alt: 'facebook'
     },
     {
       id: 2,
-      src: `${Icons.twitterIcon16}`,
+      src: `${Icons.twitterIconSmall}`,
       alt: 'twitter'
     },
     {
       id: 3,
-      src: `${Icons.linkidIcon16}`,
+      src: `${Icons.linkidIconSmall}`,
       alt: 'linkid'
     },
     {
       id: 4,
-      src: `${Icons.gplusIcon16}`,
+      src: `${Icons.gplusIconSmall}`,
       alt: 'gplus'
     }
   ]

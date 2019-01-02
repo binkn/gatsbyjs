@@ -1,5 +1,6 @@
 // Import themes modules
 import Icons from '../themes/Icons'
+import Images from '../themes/Images'
 
 const DataService = {
   infoService: {
@@ -11,6 +12,11 @@ const DataService = {
     titleText: 'ABOUT US',
     descriptionText: 'What Make Us Unique',
     extendText: 'On the other hand we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment.'
+  },
+  platformService: {
+    titleText: 'Our Services',
+    descriptionText: 'Service platform',
+    extendText: 'We provide all kind of financial service with expert advisor'
   },
   services: [
     {
@@ -56,6 +62,50 @@ const DataService = {
       alt: 'rocket',
       titleText: 'Marketing & Sales',
       descriptionText: 'We conduct the marketing of products & services using latest digital technologies Finding out exactly who your customers are and structuring.'
+    }
+  ],
+  platformList: [
+    {
+      id: 1,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
+    },
+    {
+      id: 2,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
+    },
+    {
+      id: 3,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
+    },
+    {
+      id: 4,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
+    },
+    {
+      id: 5,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
+    },
+    {
+      id: 6,
+      src: Images.accounting,
+      alt: 'accounting',
+      titleText: 'Financial Advise',
+      descriptionText: 'Technology is an integral and potentially differentiating component of your business that both influences.'
     }
   ]
 }

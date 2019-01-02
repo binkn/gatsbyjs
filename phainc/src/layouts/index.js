@@ -12,8 +12,8 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="GatsbyJS Phainc page"
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' }
+        { name: 'description', content: 'GatsbyJs practice' },
+        { name: 'keywords', content: 'training, gatsby, phainc, web-page' }
       ]}
     />
 

@@ -10,6 +10,7 @@ import Heading from '../common/Heading'
 const CustomDiv = styled.div`
   text-align: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 `
 
@@ -20,10 +21,12 @@ const Service = React.memo(props => {
   const {
     services,
     infoService,
-    customStyleHeading,
+    customStyle,
     typeCard,
     isButton
   } = props
+
+  const { customStyleHeading, cardStyle } = customStyle
 
   return (
     <Container>
@@ -44,6 +47,9 @@ const Service = React.memo(props => {
             alt={item.alt}
             titleText={item.titleText}
             descriptionText={item.descriptionText}
+            customStyle={{
+              cardStyle: {...cardStyle}
+            }}
           />
         ))}
       </CustomDiv>

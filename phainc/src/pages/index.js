@@ -14,13 +14,15 @@ import Team from '../components/team/Team'
 import Digital from '../components/digital/Digital'
 import Partner from '../components/partner/Partner'
 import Marketing from '../components/marketing/Marketing'
+import Slide from '../components/common/Slide'
 
 // data
 import DataService from '../constants/service'
+import SlideData from '../constants/slide'
 
 const IndexPage = React.memo(() => {
   const { services, infoService } = DataService
-  
+
   return (
     <div>
       <Banner
@@ -37,13 +39,15 @@ const IndexPage = React.memo(() => {
         services={services}
         infoService={infoService}
         typeCard='transform'
-        customStyleHeading={{
-          headingStyle: {
-            marginTop: '60px',
-            marginBottom: '120px'
-          },
-          titleStyle: {
-            textAlign: 'center'
+        customStyle={{
+          customStyleHeading: {
+            headingStyle: {
+              marginTop: '60px',
+              marginBottom: '120px'
+            },
+            titleStyle: {
+              textAlign: 'center'
+            }
           }
         }}
       />
@@ -55,6 +59,8 @@ const IndexPage = React.memo(() => {
       <Team />
 
       <Digital />
+
+      <Slide slides={SlideData}/>
 
       <Partner />
 

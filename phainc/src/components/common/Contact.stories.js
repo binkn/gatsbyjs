@@ -40,7 +40,7 @@ storiesOf('Contact', module)
   ))
   .add('without title', () => (
     <Contact
-      src={Icons.addressIcon20}
+      src={Icons.addressIconMedium}
       alt='address icon'
       isTitle={false}
       description='201 Stokes Isle Apt. 896, New York 10010, United State'

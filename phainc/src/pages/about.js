@@ -32,13 +32,15 @@ const About = () => {
         services={listServices}
         infoService={aboutService}
         isButton={false}
-        customStyleHeading={{
-          headingStyle: {
-            marginTop: '60px',
-            marginBottom: '65px'
-          },
-          titleStyle: {
-            textAlign: 'center'
+        customStyle={{
+          customStyleHeading: {
+            headingStyle: {
+              marginTop: '60px',
+              marginBottom: '65px'
+            },
+            titleStyle: {
+              textAlign: 'center'
+            }
           }
         }}
       />

@@ -13,7 +13,7 @@ storiesOf('Card', module)
       {story()}
     </div>
   ))
-  .add('hover transform', () => (
+  .add('transform', () => (
     <Card
       type='transform'
       src={Icons.tax}
@@ -22,7 +22,7 @@ storiesOf('Card', module)
       descriptionText='Strategy experience and analytical expertise combine to enable decision making and create value.'
     />
   ))
-  .add('hover shadow', () => (
+  .add('base', () => (
     <Card
       src={Icons.tax}
       alt='tax'
@@ -30,4 +30,13 @@ storiesOf('Card', module)
       descriptionText='Strategy experience and analytical expertise combine to enable decision making and create value.'
     />
   ))
-
+  .add('shadow', () => (
+    <Card
+      src={Icons.tax}
+      type='shadow'
+      alt='tax'
+      isButton={false}
+      titleText='Tax Planning'
+      descriptionText='Strategy experience and analytical expertise combine to enable decision making and create value.'
+    />
+  ))

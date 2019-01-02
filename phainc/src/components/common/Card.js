@@ -104,6 +104,14 @@ export default styled(Card)`
     margin-top: -50px;
     }
   `}
+
+  ${props => props.type === 'shadow' && css`
+    text-align: left;
+    
+    &:hover {
+      background-image: linear-gradient(to right,#fd5098,#ff8164)
+    }
+  `}
 `
 
 // Defined Props Types
